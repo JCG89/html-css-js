@@ -1,0 +1,243 @@
+body, html,*{
+
+      margin: 0;
+      padding: 0;
+      font-family: verdana, arial, helvetica;
+      box-sizing: border-box;
+}
+#slider{
+      background-color: beige;
+      width: 100%;
+      height: 550px;
+      position: relative;
+}
+#img{
+      width: 100%;
+      height: 550px;
+      position: absolute;
+}
+#btn-left{
+      width:550px;
+      height: 100px;
+      left: 0px;
+      top: 0px;
+      position: absolute;
+}
+#btn-right{
+      width:550px;
+      height: 100px;
+      right: 0px;
+      top: 0px;
+      position: absolute;
+}
+.left{
+      position: absolute;
+      top: 40%;
+      left: 10px;
+      width:60px;
+      height:70px;
+      opacity: 0.4
+}.left:hover{
+      opacity: 1;
+}
+.right{
+      position: absolute;
+      top: 40%;
+      right: 10px;
+      width:60px;
+      height:70px;
+      opacity: 0.4
+}.right:hover{
+      opacity: 1;
+}
+/* ici le le style du titre */
+
+.entete-titre{
+      background-color: #F00A3C;
+      text-align: top;
+      color: #F7F6F6;
+      padding: 40px;
+      position:absolute;
+      top: 60%;
+      line-height:normal;
+}
+.entete-titre h1{
+      font-size: 40px;
+      line-height: normal;
+}
+.resos{
+      position: absolute;
+      text-align: center;
+}
+.sociaux{
+      width: 7% !important;
+      margin: 5px;
+     align-self: inherit;
+}
+/* Mon menu de navigation */
+.navigation{
+      background-color: #333;
+      position:sticky;
+      top: 0; overflow: hidden;
+}
+ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+}
+li{
+      float: left;
+}
+li a{
+      color: #F7F6F6;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      display: block;
+}
+li a:hover:not(.active){
+ background-color: #F00A3C
+}
+.active{
+      background-color: #F00A3C;
+     
+}
+
+/* Contenu  */
+
+.content{
+     width:90%;
+     margin-left: auto; 
+     margin-right: auto;
+     border-bottom-width: 0px;
+     padding-left: 0px;
+     padding-top: 20px;
+     padding-right: 0px;
+     padding-bottom: 0px;
+}
+.titre-section{
+      font-size: 26px;
+      width:90%;
+      margin-right: 15%;
+      color: #676162;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 20px
+}
+p{
+      text-align: justify;
+      line-height: 24px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: #313030;
+}
+.colonne{
+      position: relative;
+      float: left;
+      width: 30%;
+      min-height: 200px;
+      text-align: center;
+      margin: 10px;
+      padding: 5px
+}
+.image{
+      opacity: 1;
+      display:block;
+      width: 100%;
+      transition: 0,5s ease;
+      backface-visibility: hidden;
+}
+.middle{
+      transition: 0,5s ease;
+      opacity: 0;  
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+.text{
+  position: relative;    
+  background-color: #F00A3C;
+  color: #FCFBFB;
+  font-size: 16px;
+  padding:16px 32px;
+  cursor: pointer
+}
+.colonne:hover .image{
+      opacity: 0.3;
+}
+.colonne:hover .middle{
+  opacity: 1;
+}
+.newsletter{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 6% 0;
+      text-align: center;
+      clear: left;
+}
+.newsleter h2{
+      margin: 0 0 1% 0;
+      font-weight: 100;
+      font-size: 38;
+      margin-top: 5px;
+}
+.newsletter .inscription{
+      width: 100%;max-width: 600px;
+      margin: auto;
+      bottom: 2px;
+      top: 2px;
+}
+.newsletter .inscription input{
+  width: 100%;
+  background: transparent;border: 0;
+  border-bottom: 1px solid #F00A3C;
+  padding: 1%  0 1% 0;
+  text-align: center;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 300;
+  line-height: 1.5;
+  color: aliceblue;
+  outline: none;
+}
+.newsletter .inscription button{
+      margin-top: 3%;
+      background: transparent;
+      border: 2px solid #F00A3C;
+      border-radius: 50px;
+      padding: 10px 40px;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: 700;
+      position: relative;
+      transition: 2s;
+}
+.newsletter .inscription button:hover{
+      color: #F00A3C;
+      padding: 10px 40px;
+      transition: 2s;
+}
+.footer{
+      clear: left;
+      padding: 40px;
+      bottom:0;
+      text-align: center;
+      margin-top: auto;background: #313030;
+}
+.footer h2{
+      color: aliceblue;
+      
+}
+.footer .sociaux{
+      width: 2% !important;
+}  
+.footer .sociaux:hover{
+      color:#F00A3C;
+      margin-top: 5px;
+}
+.copyright{
+      color: #FCFBFB;
+      text-align: center;
+}
